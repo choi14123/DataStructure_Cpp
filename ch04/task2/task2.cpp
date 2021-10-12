@@ -15,14 +15,14 @@ int main()
     
 for (int i = 0; i < 3; i++)
 {
-    cout << "pt의 " << i << "번째 X = " << pt->x << ", ";
-    cout << "pt의 " << i << "번째 Y = " << pt->y << endl;
+    cout << "pt의 " << i << "번째 X = " << pt[i].x << ", ";
+    cout << "pt의 " << i << "번째 Y = " << pt[i].y << endl;
 
-    //cout << "*p의 " << i << "번째 X = " <<  << ", ";
-    //cout << "*p의 " << i << "번째 Y = " <<  << endl;
+    cout << "*P의 " << i << "번째 X = " << p[i]->x << ", ";
+    cout << "*P의 " << i << "번째 Y = " << p[i]->y << endl;
 
-    //cout << "(*P)의 " << i << "번째 X = " <<  << ", ";
-    //cout << "(*P)의 " << i << "번째 Y = " <<  << endl;
+    cout << "(*P)의 " << i << "번째 X = " << P[0][i].x << ", ";
+    cout << "(*P)의 " << i << "번째 Y = " << P[0][i].y << endl;
     cout << endl;
 }
 
