@@ -5,7 +5,7 @@ typedef struct nodeRecord
     struct nodeRecord *Prev;
     int Data;
     struct nodeRecord *Next;
-}NODE;
+} NODE;
 
 class DLinkedList
 {

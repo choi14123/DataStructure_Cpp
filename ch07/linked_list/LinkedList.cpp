@@ -38,7 +38,7 @@ void CLinkedList::Remove(int Item)
     if (Head == NULL)
     {
         cout << "비어 있는 리스트입니다." << endl;
-        return ;
+        return;
     }
 
     NODE *temp = Head;
@@ -66,7 +66,6 @@ void CLinkedList::Remove(int Item)
         prev->Next = temp->Next;
         delete temp;
     }
-    
 }
 
 void CLinkedList::RemoveLastNode()
@@ -90,7 +89,7 @@ void CLinkedList::RemoveLastNode()
     {
         prev = Head;
         temp = Head->Next;
-        
+
         while (temp->Next != NULL)
         {
             prev = temp;

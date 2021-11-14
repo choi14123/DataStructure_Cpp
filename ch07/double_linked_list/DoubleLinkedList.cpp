@@ -32,7 +32,7 @@ void DLinkedList::Add(int Item)
         Tail->Next = temp;
         temp->Prev = Tail;
         Tail = temp;
-    }    
+    }
 }
 
 void DLinkedList::Remove(int Item)
@@ -90,11 +90,11 @@ void DLinkedList::RemoveLastNode()
     }
     else
     {
-     prev = Tail->Prev;
-     prev->Next = NULL;
+        prev = Tail->Prev;
+        prev->Next = NULL;
 
-     delete Tail;
-     Tail = prev;   
+        delete Tail;
+        Tail = prev;
     }
 }
 
@@ -143,8 +143,8 @@ void DLinkedList::PrintAllList()
 void DLinkedList::PrintAllListReverse()
 {
     cout << "Reverse List (";
-    NODE *temp =Tail;
-    
+    NODE *temp = Tail;
+
     while (temp != NULL)
     {
         cout << temp->Data;

@@ -10,6 +10,7 @@ class CLinkedList
 {
 private:
     NODE *Head, *Tail;
+
 public:
     CLinkedList(void);
     ~CLinkedList(void);

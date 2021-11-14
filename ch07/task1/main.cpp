@@ -15,6 +15,8 @@ int main()
 
     list1.Remove(200);
 
+    list1.PrintAllListReverse();
+
     list1.Add(300);
 
     list1.InsertAfter(200, 250);

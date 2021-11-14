@@ -5,7 +5,7 @@ typedef struct nodeRecord
     struct nodeRecord *Prev;
     int Data;
     struct nodeRecord *Next;
-}NODE;
+} NODE;
 
 class DLinkedList
 {
@@ -24,7 +24,7 @@ public:
     void PrintAllList();
     void PrintAllListReverse();
 
-    bool Exist (int Item);
+    bool Exist(int Item);
     void InsertAfter(int TargetItem, int Item);
     void InsertBefore(int TargetItem, int Item);
 };
