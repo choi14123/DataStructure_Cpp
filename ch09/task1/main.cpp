@@ -20,7 +20,7 @@ int main()
         i++;
     }
 
-    while (Q.GetSize() > 1)
+    while (Q.GetSize() > 2)
     {
         for (int j = 1; j <= M - 1; j++)
         {
