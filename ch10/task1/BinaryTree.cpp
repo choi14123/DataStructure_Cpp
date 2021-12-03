@@ -48,7 +48,7 @@ void BinaryTree::preorder(NODE_TREE *node)
         cout << ' ' << node->key;
         preorder(node->left);
         preorder(node->right);
-    } 
+    }
 }
 
 void BinaryTree::inorder(NODE_TREE *node)
@@ -83,7 +83,7 @@ int BinaryTree::getHeight(NODE_TREE *node)
 {
     if (node == NULL)
         return 0;
-    
+
     int hLeft = getHeight(node->left);
     int hRight = getHeight(node->right);
 
@@ -110,4 +110,3 @@ void BinaryTree::deleteNode(NODE_TREE *node)
         cout << "delete " << node->key << " node" << endl;
     }
 }
-

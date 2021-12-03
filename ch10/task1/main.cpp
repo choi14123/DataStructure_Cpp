@@ -25,61 +25,57 @@ int main()
             cout << endl;
 
             cout << "[이진트리 출력] preorder : ";
-            cout << bst.preorder(bst.getRoot());
+            bst.preorder(bst.getRoot());
             cout << endl;
 
             cout << "[이진트리 출력] inorder : ";
-            cout << bst.inorder(bst.getRoot());
+            bst.inorder(bst.getRoot());
             cout << endl;
 
             cout << "[이진트리 출력] postorder : ";
-            cout << bst.postorder(bst.getRoot());
+            bst.postorder(bst.getRoot());
             cout << endl;
 
             break;
 
         case '2':
-            cout << "삽입할 숫자를 입력하세요 : ";
+            cout << "삽일할 숫자를 입력하세요 : ";
             cin >> key;
-
             bst.insertNode(stoi(key));
+
             break;
 
         case '3':
             cout << "삭제할 숫자를 입력하세요 : ";
             cin >> key;
-
             bst.deleteNode(NULL, stoi(key));
+
             break;
+
         case '4':
             cout << "찾을 숫자를 입력하세요 : ";
             cin >> key;
-
             foundNode = bst.searchBST(NULL, stoi(key));
-
             if (foundNode != NULL)
-                cout << endl
-                     << foundNode->key << "를 찾았습니다." << endl;
-            else
-                cout << endl
-                     << "숫자를 찾지 못했습니다." << endl;
+                cout << endl << foundNode->key << "를 찾았습니다." << endl;
+            else 
+            cout << endl << "숫자를 찾지 못했습니다." << endl;
             break;
+
         case '5':
-            return 0;
+        return 0;
         default:
-            cout << endl
-                 << "잘못 선택하셨습니다." << endl;
-            break;
+        cout << endl << "잘못 선택하셨습니다." << endl;
+        break;
         }
     }
-
     return 0;
 }
 
 void menu()
 {
     cout << endl
-         << "*__________________________*";
+         << "*______________________________*";
     cout << endl
          << "\t1 : 트리 출력";
     cout << endl
@@ -91,7 +87,7 @@ void menu()
     cout << endl
          << "\t5 : 종료";
     cout << endl
-         << "*__________________________*";
+         << "*______________________________*";
     cout << endl
          << "메뉴입력 >> ";
 }
